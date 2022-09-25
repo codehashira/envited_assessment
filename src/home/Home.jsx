@@ -6,10 +6,17 @@ import "../common/TextGradient.css";
 import { COLORS } from "../theme/Colors";
 import landingSVG from "../assets/svgs/landing.svg";
 import { ButtonMobile, ButtonDesktop } from "../common/Button";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
   const isDesktopOrLaptop = useMediaQuery({ query: "(min-width:1224px)" });
   const isMobileOrTable = useMediaQuery({ query: "(max-width:1224px)" });
+
+  const navigate = useNavigate();
+
+  const handleNext = () => {
+    navigate("/create");
+  };
 
   return (
     <main className="homeContainer" style={{ height: HEIGHT, width: WIDTH }}>
@@ -101,7 +108,20 @@ function Home() {
             </p>
           </div>
           <img src={landingSVG} />
-          <ButtonMobile title="🎉 Create my event" />
+          <button
+            onClick={handleNext}
+            style={{
+              padding: "16px 21px",
+              color: "#FFFFFF",
+              border: "none",
+              borderRadius: "10px",
+              background: "-webkit-linear-gradient(left, #8456ec, #e87bf8)",
+              fontWeight: "700",
+              cursor: "pointer",
+            }}
+          >
+            🎉 Create my event
+          </button>
         </div>
       )}
     </main>

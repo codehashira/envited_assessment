@@ -1,0 +1,27 @@
+.eventContainer {
+  height: "100%";
+  width: "100%";
+  background-color: #f6f2fe;
+}
+
+.eventImage {
+  height: 375px;
+  width: inherit;
+  aspect-ratio: 1;
+}
+
+.h1Desktop {
+  font-size: 48px;
+}
+
+.h1Mobile {
+  font-size: 90px;
+}
+
+.pMobile {
+  font-size: 14px;
+}
+
+.pDesktop {
+  font-size: 18px;
+}

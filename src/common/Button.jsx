@@ -16,6 +16,7 @@ function BaseButton(props) {
         borderRadius: "10px",
         background: "-webkit-linear-gradient(left, #8456ec, #e87bf8)",
         fontWeight: "700",
+        cursor: "pointer",
       }}
     >
       {title}
