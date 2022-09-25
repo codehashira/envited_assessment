@@ -1,0 +1,28 @@
+.homeContainer {
+  height: "100%";
+  width: "100%";
+  padding: 0 20px;
+  background-color: #f6f2fe;
+}
+
+img {
+  height: 292px;
+  width: 165px;
+  aspect-ratio: 1;
+}
+
+.h1Desktop {
+  font-size: 64px;
+}
+
+.h1Mobile {
+  font-size: 36px;
+}
+
+.pMobile {
+  font-size: 16px;
+}
+
+.pDesktop {
+  font-size: 24px;
+}
